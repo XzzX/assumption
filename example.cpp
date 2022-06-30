@@ -1,6 +1,7 @@
-#include "assumption.h"
+#include <assumption.hpp>
 
 int main()
 {
-    ASSERT_EQUAL(4*5, 4*6, "simple " << "maths");
+    ASSERT(false, "");
+    ASSERT_EQUAL(4*5, 4*6, "simple {}", "maths");
 }
